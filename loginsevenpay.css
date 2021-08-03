@@ -1,0 +1,114 @@
+
+body{
+	background-repeat: no-repeat;
+	background-image: url(background2.png);
+    background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+main {
+	max-width: 300px;
+	background-color: rgba(0, 0, 0, 0.616);
+	box-shadow: rgba(251, 255, 0, 0.445) 5px 5px 15px;
+	border-radius: 5px 40px 5px 40px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 7%;
+
+}
+
+#titulo {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: center;
+	font-weight: 400;
+}
+
+h2 {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(255, 0, 0);
+	margin-top: 80px;
+	margin-bottom: 5px;
+	font-size: 30px;
+}
+
+#registro {
+	font-size: 18px;
+}
+
+#login{
+	margin-right: 6%;
+}
+
+#login >input {
+	background-color: transparent;
+	color: white;
+	padding: 7px;
+	border-radius: 10px;
+	margin-bottom:10px;
+	outline: none;
+	border-color: white;
+	width: 100%;
+}
+
+#entrar {
+	background-color: transparent;
+	color: white;
+	border-color: white;
+	padding: 8px;
+	border-radius: 4px;
+	outline: none;
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	box-shadow: black 2px 2px 5px;
+}
+
+#entrar:hover {
+	background-color: rgba(255, 255, 255, 0.199);
+	cursor: pointer;
+}
+
+
+#login>input:hover {
+	background-color: rgba(255, 255, 255, 0.11);
+}
+
+.lembreme {
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgba(255, 255, 255, 0.705);
+	padding-left: 5px;
+	padding-top: 1.5px;
+}
+
+#lembrar {
+	display: inline-flex;
+	width: 150px;
+	height: 20px;
+}
+
+#recuperar a {
+	color: rgba(255, 255, 255, 0.836);
+	text-decoration: none;
+	opacity: 80%;
+	padding-top: 5px;
+	display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+}
+
+#recuperar {
+	margin-top: 60px;
+	text-align: center;
+}
+
+#recuperar a:hover {
+	text-decoration: underline;
+	color: rgb(167, 167, 230);
+}
+
+#seven {
+	font-weight: 400;
+	color: white;
+}
