@@ -1,11 +1,12 @@
 
-body{
+body {
 	background-repeat: no-repeat;
 	background-image: url(background2.png);
-    background-size: cover;
+	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
 }
+
 main {
 	max-width: 300px;
 	background-color: rgba(0, 0, 0, 0.616);
@@ -41,12 +42,12 @@ h2 {
 	font-size: 18px;
 }
 
-#login{
+#divLogin {
 	margin-right: 6%;
 	transition-duration: 0,5;
 }
 
-#login >input {
+#divLogin >input {
 	background-color: transparent;
 	color: white;
 	padding: 7px;
@@ -56,7 +57,12 @@ h2 {
 	border-color: white;
 	width: 100%;
 }
-#entrar {
+
+#divLogin>input:hover {
+	background-color: rgba(255, 255, 255, 0.11);
+}
+
+#btnLogin {
 	background-color: transparent;
 	color: white;
 	border-color: white;
@@ -68,16 +74,11 @@ h2 {
 	margin-top: 15px;
 	box-shadow: black 2px 2px 5px;
 	transition-duration:1s ;
-	}
-
-#entrar:hover {
-	background-color: rgba(255, 255, 255, 0.199);
-	cursor: pointer;
 }
 
-
-#login>input:hover {
-	background-color: rgba(255, 255, 255, 0.11);
+#btnLogin:hover {
+	background-color: rgba(255, 255, 255, 0.199);
+	cursor: pointer;
 }
 
 .lembreme {

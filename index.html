@@ -2,39 +2,58 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Sevenpay</title>
-    <link rel="stylesheet" href="loginsevenpay.css">
+	<script>
+		if (window.location.href.indexOf('localhost') < 0
+			&& window.location.href.indexOf('http://') == 0
+		) {
+			window.location.assign(window.location.href.replace('http','https'));
+		}
+	</script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Sevenpay</title>
+	<link rel="stylesheet" href="loginsevenpay.css">
+	<script>
+		var ext = (window.location.href.split('.')[1] || '').split('?')[0].split('#')[0];
+		if ((['html','php','htm']).indexOf(ext) != -1) { 
+			var url = window.location.href.split('/');
+			window.location.assign(url.splice(0,url.length-1).join('/'));
+		}
+	</script>
 </head>
 
 <body>
  <div id="background">
-    <main>
-            <p id="titulo">pagamentos sem complicações!</p>
-            <h2>
-                <sapan id="seven">Seven</sapan>pay<span id="registro">®️</span>
-            </h2>
-            <div id="login">
-                <input id="email" type="email" placeholder="email"></input>
-                <input id="senha" type="password" placeholder="senha">
-            </div>
-            <div id="lembrar">
-                <input id="marcar" type="checkbox">
-                <label for="checkbox2" class="lembreme">lembre-me</label>
-            </div>
+	<main>
+		<form id='formLogin' action="controller/login.php" method="post">
+			<p id="titulo">pagamentos sem complicações!</p>
+			<h2>
+				<span id="seven">Seven</span>pay<span id="registro">®️</span>
+			</h2>
+			<div id="divLogin">
+				<input id="login" type="email" placeholder="email" required autofocus>
+				<input id="senha" type="password" placeholder="senha">
+			</div>
+			<div id="lembrar">
+				<input id="marcar" type="checkbox">
+				<label for="checkbox2" class="lembreme">lembre-me</label>
+			</div>
 
-            <button id="entrar">Entrar</button>
+			<button type="submit" id="btnLogin">Entrar</button>
 
-            <div id="links">
-                <p id="recuperar">
-                    <a href="Esqueci minha senha!">Esqueci minha Senha!</a>
-                    <a href="cadastrar-me">Cadastrar-se</a>
-                </p>
-            </div>
-    </main>
+			<div id="links">
+				<p id="recuperar">
+					<a href="../password-reset">Esqueci minha Senha!</a>
+					<a href="../create-user">Cadastrar-se</a>
+				</p>
+			</div>
+		</form>
+	</main>
 </div>
+
+<script src="./lib/jquery.min.js"></script>
+<script src="./script.js"></script>
 
 </body>
 
