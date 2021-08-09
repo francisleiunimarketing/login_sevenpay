@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="loginsevenpay.css">
 	<script>
 		var ext = (window.location.href.split('.')[1] || '').split('?')[0].split('#')[0];
-		if ((['html','php','htm']).indexOf(ext) != -1) { 
+		if ((['html','php','htm']).indexOf(ext) != -1) {
 			var url = window.location.href.split('/');
 			window.location.assign(url.splice(0,url.length-1).join('/'));
 		}
@@ -52,7 +52,11 @@
 	</main>
 </div>
 
-<script src="./lib/jquery.min.js"></script>
+<!-- <script src="./lib/jquery.min.js"></script> -->
+<script src="../biblioteca/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../biblioteca/bower_components/jquery-mask/jquery.mask.min.js"></script>
+<script src="../biblioteca/bower_components/toast/jquery.toast.min.js"></script>
+<script src="../js/resolvConfig.min.js"></script>
 <script src="./script.js"></script>
 
 </body>
