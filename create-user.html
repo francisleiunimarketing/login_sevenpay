@@ -13,7 +13,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Cadastre-se Sevenpay</title>
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="loginsevenpay.css">
+	<link rel="stylesheet" href="../biblioteca/bower_components/font-awesome/css/font-awesome.min.css">
 	<script>
 		var ext = (window.location.href.split('.')[1] || '').split('?')[0].split('#')[0];
 		if ((['html','php','htm']).indexOf(ext) != -1) {
@@ -26,30 +28,31 @@
 <body>
  <div id="background">
 	<main>
-		<form id='formLogin' action="controller/login.php" method="post">
-			<p id="titulo">pagamentos sem complicações!</p>
-			<h2>
-				<span id="seven">Seven</span>pay<span id="registro">®️</span>
-			</h2>
-			<div id="divLogin">
-				<div id="formCadastroRender"></div>
-			</div>
+		<!-- <form id='formLogin' action="controller/login.php" method="post"> -->
+		<!-- <p id="titulo">pagamentos sem complicações!</p> -->
+		<h2 style="margin-top: 50px;margin-bottom: 15px;">
+			<span id="seven">Seven</span>pay<span id="registro">®️</span>
+		</h2>
+		<div id="divLogin">
+			<div id="formCadastroRender"></div>
+		</div>
 
-			<div id="links">
-				<p id="recuperar">
-					<a href="../login">Fazer Login</a>
-					<a href="../password-reset">Esqueci minha Senha!</a>
-				</p>
-			</div>
-		</form>
+		<div id="links">
+			<p id="recuperar">
+				<a href="../login">Fazer Login</a>
+				<a href="../password-reset">Esqueci minha Senha!</a>
+			</p>
+		</div>
+		<!-- </form> -->
 	</main>
 </div>
 
 <!-- <script src="../admin/biblioteca/bower_components/jquery/dist/jquery.min.js"></script> -->
 <script src="../biblioteca/bower_components/jquery/dist/jquery.min.js"></script>
 <script src="../biblioteca/bower_components/jquery-mask/jquery.mask.min.js"></script>
-<script src="../biblioteca/bower_components/toast/jquery.toast.min.js"></script>
-<script src="../js/resolvConfig.min.js"></script>
+<!-- <script src="../biblioteca/bower_components/toast/jquery.toast.min.js"></script> -->
+<!-- <script src="../js/resolvConfig.min.js"></script> -->
+<script src="../js/resolvConfig.full.js"></script>
 <script src="./form.js"></script>
 <script src="./script-create-user.js"></script>
 

@@ -86,18 +86,27 @@ function resolvFormCadastro() {
 	$("#formCadastroRender").html(
 		resolvConfig([ { row }
 			, { row: [
-				{ div: { id: 'btnsFormRender', ctx: [
-					{ button: { desc: 'Voltar', classDiv: 'col-xs-6', class: 'btn btn-default btn-block'
-						, style: { 'display': cadastroAtual_Global == 0 ? 'none' : 'block' }
-						, styleDiv: { 'margin-top':'10px','padding-left':'0' }
+				{ div: { id: 'btnsFormRender', style: {'margin-left':'-9px'}, isCenter: true, ctx: [
+					{ button: { desc: 'Voltar'
+						// , classDiv: 'col-xs-6'
+						, class: 'btn btn-default btn-block'
+						, style: {
+							'display': cadastroAtual_Global == 0 ? 'none' : 'inline',
+							'width': '47%',
+						}
+						// , styleDiv: { 'margin-top':'10px','padding-left':'0' }
 						, click: function() {
 							cadastroAtual_Global--;
 							resolvFormCadastro();
 						}
 					} },
 					{ button: { desc: cadastroAtual_Global == form_Global.length-1 ? 'Finalizar' : 'Prosseguir'
-						, classDiv: 'col-xs-6', class: 'btn btn-block btn-primary'
-						, styleDiv: { 'margin-top':'10px','padding-right':'0' }
+						// , classDiv: 'col-xs-6'
+						, class: 'btn btn-block btn-primary'
+						, style: {
+							'width': '47%',
+						}
+						// , styleDiv: { 'margin-top':'10px','padding-right':'0' }
 						, click: function() {
 							var form = getForm(form_Global[cadastroAtual_Global]);
 							if (!form.valid) return;

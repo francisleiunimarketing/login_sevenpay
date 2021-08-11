@@ -15,8 +15,7 @@ main {
 	margin: auto;
 	padding: 20px;
 	margin-top: 7%;
-	
-	
+	padding-left: 40px;
 }
 
 #titulo {
@@ -47,7 +46,12 @@ h2 {
 	transition-duration: 0,5;
 }
 
-#divLogin >input {
+* {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/* #divLogin>input,#formCadastroRender>.row>input { */
+input[type=text],input[type=email],input[type=password],input[type=tel],input[type=number] {
 	background-color: transparent;
 	color: white;
 	padding: 7px;
@@ -55,30 +59,44 @@ h2 {
 	margin-bottom:10px;
 	outline: none;
 	border-color: white;
-	width: 100%;
+	/* width: 100%; */
+	width: 90%;
 }
 
-#divLogin>input:hover {
+/* #divLogin>input:hover,#formCadastroRender>.row>input:hover { */
+input:hover {
 	background-color: rgba(255, 255, 255, 0.11);
 }
 
 #btnLogin {
+	margin: auto;
+	display: block;
+}
+
+/* #btnLogin,#btnsFormRender>.col-xs-6>button { */
+button {
 	background-color: transparent;
 	color: white;
 	border-color: white;
-	padding: 8px;
+	padding: 7px;
 	border-radius: 4px;
 	outline: none;
-	display: block;
-	margin: auto;
-	margin-top: 15px;
+	/* display: block; */
+	/* margin: auto; */
+	/* margin-top: 15px; */
 	box-shadow: black 2px 2px 5px;
-	transition-duration:1s ;
+	border-radius: 10px;
+	/* transition-duration: 1s; */
 }
 
-#btnLogin:hover {
+/* #btnLogin:hover,#btnsFormRender>.col-xs-6>button:hover { */
+button:hover {
 	background-color: rgba(255, 255, 255, 0.199);
 	cursor: pointer;
+}
+
+#btnsFormRender {
+	display:inline;
 }
 
 .lembreme {
